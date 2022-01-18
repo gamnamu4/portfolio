@@ -1,15 +1,48 @@
 :root {
   /* color */
+  --color-white: #ffffff;
 
   /* font size */
-  
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
   /* font wight */
+  --weigh-bold: 700;
+  --weigh-semi-bold: 600;
+  --weigh-regular: 400;
 
   /* size */
-
 }
 
 /* universal tags */
 * {
   box-sizing: border-box;
+}
+
+/* typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weigh-bold);
+  margin: 16px 0px 0 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weigh-semi-bold);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-medium);
+  font-weight: var(--font-regular);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-medium);
+  font-weight: var(--font-regular);
+  margin: 4px 0;
 }
