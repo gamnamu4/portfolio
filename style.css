@@ -35,8 +35,18 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* typography */
@@ -99,4 +109,47 @@ p {
 .navbar__menu__items:hover {
   background-color: yellowgreen;
   
+}
+
+/* home */
+#home {
+  background: url(/imgs/IMG_6009\ 복사_resize.jpg) center/cover no-repeat;
+  height: 1000px;
+  padding: 50px;
+}
+
+.home__content {
+  display: inline-block;
+  position: absolute;
+  bottom: 200px;
+}
+
+#home h1 {
+  font-size: 100px;
+  padding: 10px;
+}
+
+.home__circle {
+  display: inline-block;
+  width:740px;
+  height: 740px;
+  border-radius: 500px;
+  border: 30px solid rgb(4, 8, 12);
+  position: relative;
+  top: 85px;
+  left: 630px;
+}
+
+.home__circle:hover {
+  background-color: black;
+}
+
+.home__contact {
+  font: var(--font-regular);
+  font-weight: var(--weigh-bold);
+  margin: 24px;
+  padding: 18px 20px;
+  border: 2px solid;
+  border-radius: 4px;
+  color: #ffffff;
 }
