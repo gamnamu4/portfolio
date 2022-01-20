@@ -25,7 +25,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family:  'Noto Serif KR', serif;;
@@ -78,14 +77,27 @@ p {
   background-color:steelblue;
   color: var(--color-white);
   padding: 16px;
+  width: 100%;
 }
 .navbar__menu {
   display: flex;
-  
 }
 .navbar__logo {
+  padding: 0 40px;
+  display: flex;
   font-size: var(--font-medium);
   font-weight: var(--weigh-semi-bold);
+}
+/* .navbar__logo p {
+  display: block;
+} */
+.navbar__logo .twoeye {
+  position: absolute;
+  opacity: 0;
+}
+.navbar__logo .twoeye:hover {
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
 }
 .navbar__menu__items {
   padding: 8px 12px;
@@ -99,6 +111,14 @@ p {
 .navbar__menu__items:hover {
   background-color: yellowgreen;
 }
+.navbar__toggle-btn {
+  position: absolute;
+  top: 35px;
+  right: 32px;
+  font-size: 50px;
+  color: #ffffff;
+  display: none;
+}
 
 /* home */
 #home {
@@ -107,13 +127,18 @@ p {
   padding: 50px;
 }
 .home__content {
-  display: inline-block;
   position: absolute;
-  bottom: 200px;
 }
 #home h1 {
   font-size: 100px;
-  padding: 10px;
+  display: block;
+  position: relative;
+  top: 200px;
+}
+#home h2 {
+  display: block;
+  position: relative;
+  top: 215px;
 }
 /* .home__circle {
   display: inline-block;
@@ -125,17 +150,19 @@ p {
   top: 85px;
   left: 630px;
 } */
-.home__circle:hover {
+/* .home__circle:hover {
   background-color: black;
-}
+} */
 .home__contact {
   font: var(--font-regular);
   font-weight: var(--weigh-bold);
-  margin: 24px;
+  margin-right: 40px;
   padding: 18px 20px;
   border: 2px solid;
   border-radius: 4px;
   color: #ffffff;
+  position: relative;
+  bottom: 360px;
 }
 
 /* section common */
@@ -320,4 +347,19 @@ p {
   transform: scale(1.3);
   color: blueviolet;
   transition: all var(--animation-duration) ease-in;
+}
+
+/* 768px screent width */
+@media screen and (max-width: 768) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+  }
 }
