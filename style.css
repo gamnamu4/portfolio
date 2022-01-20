@@ -350,7 +350,7 @@ p {
 }
 
 /* 768px screent width */
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     display: block;
   }
@@ -361,8 +361,20 @@ p {
   .navbar__menu {
     flex-direction: column;
     text-align: center;
+    width: 100%;
+    display: none;
   }
   .about__majors {
     flex-direction: column;
+    text-align: center;
+  }
+  .major{
+    margin-bottom: 50px;
+  }
+  .skillset {
+    flex-direction: column;
+  }
+  .project {
+    flex-grow: 1;
   }
 }
