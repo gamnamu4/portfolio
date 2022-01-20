@@ -362,4 +362,7 @@ p {
     flex-direction: column;
     text-align: center;
   }
+  .about__majors {
+    flex-direction: column;
+  }
 }
